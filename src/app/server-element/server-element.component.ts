@@ -7,7 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ServerElementComponent implements OnInit {
   // Binding to custom properties
-  @Input() element: {type: string, name: string, content: string};
+  // @Input() element: {type: string, name: string, content: string};
+  // add an alias to custom properties
+  @Input('servElement') element: {type: string, name: string, content: string};
 
   constructor() { }
 
